@@ -4,6 +4,7 @@ const hairdresserControllers = require('../controllers/hairdresser-controller');
 const beautysalonControllers = require('../controllers/beautysalon-controller');
 const spaControllers = require('../controllers/spa-controller');
 const citiesControllers = require('../controllers/cities-controller');
+const cityController = require('../controllers/city-controller');
 
 const router = express.Router();
 
@@ -13,6 +14,8 @@ router.get('/beautysalon/:city', beautysalonControllers.getPlaces);
 
 router.get('/spa/:city', spaControllers.getPlaces);
 
-router.get('/api/cities', citiesControllers.getCities);
+router.get('/api/city', cityController.getAllCities);
+
+// router.get('/api/cities', citiesControllers.getCities);
 
 module.exports = router;
