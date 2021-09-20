@@ -13,7 +13,18 @@ async function getDataByKeyword(coordinates, keyword) {
         throw error;
     }
 
-    const result = data.results;
+    const result = [];
+    for (let index = 0; index < data.results.length; index++) {
+        let infos = {
+            name: data.results[index].name,
+            geometry: data.results[index].geometry,
+            photos: data.results[index].photos,
+            rating: data.results[index].rating,
+            types: data.results[index].types,
+            vicinity: data.results[index].vicinity
+        };
+        result.push(infos);
+    }
     return result;
 }
 

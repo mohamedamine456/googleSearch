@@ -2,7 +2,8 @@
     "env": {
         "DB_USER": "amine",
         "DB_PASSWORD": "Lgc216III0I5xioQ",
-        "DB_NAME": "MoroccoCities",
+        "DB_NAME": "MoroccanCities",
+        "GOOGLE_PLACE_PHOTO_API": "https://maps.googleapis.com/maps/api/place/photo",
         "GOOGLE_GEOCODE_API_URL": "https://maps.googleapis.com/maps/api/geocode",
         "GOOGLE_SEARCHNEARBY_API_URL": "https://maps.googleapis.com/maps/api/place/nearbysearch",
         "GOOGLE_API_KEY": "AIzaSyBoubJB4ISXCOefbW2qpLqBOEf19EepNmg",
